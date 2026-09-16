@@ -1,0 +1,10 @@
+wechatauto-bot
+Copyright 2026 wechatauto-bot contributors
+
+This product includes software developed as part of the
+wechatauto-replica project (https://github.com/fanyuantaier/wechatauto-replica),
+licensed under the Apache License, Version 2.0.
+
+本工具是一个独立的上层应用，通过公开 API 调用 wechatauto-replica
+（微信 4.x 本地数据库解密 + UIA/OCR 混合驱动），未复制其源代码。
+使用前请阅读并遵守 wechatauto-replica 项目自身的许可与免责声明。

@@ -1,0 +1,95 @@
+# ============================================================
+#  敏感数据（绝对不要提交）
+# ============================================================
+# 运行期生成：含 API Key、账号、监听目标、私人提示词预设
+wx_ai_bot_config.json
+wx_ai_bot_config.local.json
+
+# 运行日志：含聊天内容、昵称、群名
+wx_ai_bot.log
+wx_ai_bot.log.*
+
+# 对话记忆 / 人物档案：含聊天记录与对联系人的画像
+wx_ai_bot_memory.json
+wx_ai_bot_profiles.json
+*.memory.json
+*.profiles.json
+
+# 解密后的微信数据库副本（明文聊天数据！）
+.wxdb_cache/
+.wxdb_fresh/
+*.wxdb_cache/
+
+# wechatauto 自己的日志目录（相对 cwd 生成，含聊天内容）
+wechatauto_logs/
+
+# 本地截图/调试产物
+_shots/
+*.png
+!docs/**/*.png
+
+# 本地工具二进制 / gh 配置（含登录凭据，绝对不能提交）
+.tools-bin/
+
+# 人名黑名单（含你自己与联系人的真实姓名/昵称，绝对不能提交）
+.name_blocklist.txt
+
+# 审计/临时产物
+.audit/
+
+# ============================================================
+#  依赖源码（用 pip 装，不要提交）
+# ============================================================
+repo/
+wechatauto-replica/
+
+# ============================================================
+#  Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# 虚拟环境
+.venv/
+venv/
+env/
+ENV/
+
+# 测试 / 类型检查缓存
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ============================================================
+#  编辑器 / 系统
+# ============================================================
+.vscode/
+.idea/
+*.swp
+*~
+Thumbs.db
+Desktop.ini
+desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# ɨ��/�����������ܺ��������ݣ������ύ��
+audit*.txt
+check*.txt
+scan*.txt
+
+
+# ��ʱ/������
+_scan.txt
+*.audit
+

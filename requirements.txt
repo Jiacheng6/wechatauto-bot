@@ -1,0 +1,20 @@
+# 微信 AI 自动回复机器人（GUI）的依赖
+#
+# 一条命令装齐（推荐）：
+#     pip install -r requirements.txt
+#
+# 本项目本身无需安装，装完依赖直接运行即可：
+#     python wx_ai_bot.py
+
+# ---- 核心：微信 4.x 消息读取（SQLCipher 解密）+ UIA/OCR 发送驱动 ----
+# 它会自动带上 uiautomation / pywin32 / cryptography / opencv 等全部依赖
+wechatauto-replica>=1.2.1
+
+# ---- OCR 发送路径（发送的兜底路径需要）----
+winsdk>=1.0.0b10
+pypinyin>=0.48.0
+
+# ---- 大模型（可选）----
+# 不装也能用：程序内置标准库 urllib 调用 OpenAI 兼容接口；
+# 装了则自动优先使用 SDK。
+openai>=1.0.0

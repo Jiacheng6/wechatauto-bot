@@ -1,0 +1,22 @@
+# 统一换行符：仓库内一律存 LF，检出时按平台处理（消除 CRLF 警告）
+* text=auto eol=lf
+
+# Windows 批处理必须保留 CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# 二进制（不要做换行转换）
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.zip binary
+*.gz binary
+*.whl binary
+*.db binary
+*.sqlite binary
+
+# 让 GitHub 正确识别语言构成
+*.py linguist-language=Python
